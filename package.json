@@ -2,7 +2,7 @@
   "name": "cypress-cucumber-sandbox",
   "version": "0.0.0",
   "description": "Cypress Environment with Cucumber plugin for practice",
-  "type":  "module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,9 @@
   "author": "Roberto Salgado",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.17.1"
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.17.1",
+    "esbuild": "^0.18.11"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^18.0.1"
