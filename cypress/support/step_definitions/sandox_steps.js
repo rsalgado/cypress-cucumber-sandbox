@@ -1,7 +1,7 @@
 import { When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
-When("I visit duckduckgo.com", function() {
-  cy.visit("https://duckduckgo.com")
+When("I visit {string}", function(URL) {
+  cy.visit(URL);
 });
 
 Then("I should see the search bar", function() {
