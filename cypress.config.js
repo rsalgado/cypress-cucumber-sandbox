@@ -20,7 +20,7 @@ export default defineConfig({
           plugins: [createESBuildPlugin.default(config)],
         })
       );
-      
+
       // Return the config object as it might have been modified by the plugin.
       return config;
     },
