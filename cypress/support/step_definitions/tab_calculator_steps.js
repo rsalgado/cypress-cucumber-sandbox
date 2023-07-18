@@ -43,6 +43,9 @@ Then("the user's tab Sub-Total should be {string}", function(subTotal) {
 });
 
 
+// Helper functions
+// TODO: Consider moving these functions into a separate module or grouping them in a class to have a POM
+
 function getCardFor(userName) {
   return cy.get(".person-card .person-header .name")
             .filter((_index, $el) => $el.value === userName)
